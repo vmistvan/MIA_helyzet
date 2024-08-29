@@ -1,6 +1,6 @@
 # Ön itt áll
 ## Mottó: TL/DR - Túl hosszú volt, nem olvastam el.
-__A peremen állsz, hogy elrugaszkodj attól, amit eddig ismertél, és egy új, csodálatos világba készülsz beleugrani. Igyekszem végig melletted lenni, de ehhez nagyon fontos, hogy kezdjük az elején, hogy az első élmény ne kudarc legyen. Hatalmas szerencsém volt, hogy kiváló képességű emberektől jó kiindulási pontokat kaptam, de így is akár hetekig keringtem egy probléma, egy elavult program, egy hibás példa körül. Bízz bennem nézzük meg együtt, mi lesz a legjobb kiindulás__
+__A peremen állsz, hogy elrugaszkodj attól, amit eddig ismertél, és egy új, csodálatos világba készülsz beleugrani. Igyekszem végig melletted lenni, de ehhez nagyon fontos, hogy kezdjük az elején, hogy az első élmény ne kudarc legyen. Hatalmas szerencsém volt, hogy kiváló képességű emberektől jó kiindulási pontokat kaptam, de így is akár hetekig keringtem egy probléma, egy elavult program, egy hibás példa körül. Bízz bennem nézzük meg együtt, mi lesz a legjobb kiindulás.__
 
 Előfordulhat, hogy sohase fogsz komplex saját AI modellt felépíteni és betanítani nulláról, de akkor is hasznos lesz, ha tudod, mi van a motorháztető alatt.
 
