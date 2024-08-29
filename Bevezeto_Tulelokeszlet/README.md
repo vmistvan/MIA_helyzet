@@ -15,3 +15,7 @@ Lehet, hogy online kezded, majd aztán helyi gépen folytatod, fejlesztőeszköz
 4. És hasznos modulok általános adatkezeléshez, az adatzsonglőrködéshez, vizualizációhoz, vagy éppen amit a modelled vagy modelled típusának fejlesztői adtak.
 
 Nézzük, hogy lehet elkészíteni a munkakörnyezetet!
+
+A fejlesztőrendszerben ki kell alakítani egy virtuális környezetet - fontos, hogy ne zavarják az egyes feladatokra összeválogatott modulok verziói!
+
+A virtuális környezethez az instrukciókat én mindig egy beszédesen kommentált install.txt-ben helyezem el.
