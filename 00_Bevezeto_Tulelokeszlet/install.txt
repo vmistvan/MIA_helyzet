@@ -1,0 +1,22 @@
+# bármi jó, de én a PyCharm-ot használtam, és Pythonból a 3.11-es verziót. Cuda telepítése esszenciális még hozzá.
+# ezeket a projektkönyvtár .venv alól kell cmd-ben, vagy
+python.exe -m pip install --upgrade pip
+
+
+pip install pytorch-lightning
+pip install pandas
+pip install scikit-learn
+
+pip install torch
+
+# úgy tűnik ez a nyerő sor - a cuda-t használó torch felpattintása
+pip install torch==2.1.0 torchtext torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+pip install flash
+pip install lightning-flash
+
+pip install pandas
+pip install seaborn
+
+# ez a candlestick és más bohóságokhoz ideális.
+pip install plotly
