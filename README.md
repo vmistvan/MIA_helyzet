@@ -1,5 +1,5 @@
 # Olvass el - READ ME in hungarian language.
-## For english: please check the links below, that forwards you to the original docs
+## For english: please check the links below, forward you to the original docs
 ## Ha magyar vagy: irány az olvassel.md - ott lesznek a fordítások, egyebek.
 
 # Links for english readers:
