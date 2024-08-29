@@ -82,7 +82,8 @@ class XORModel(pl.LightningModule):
 checkpoint_callback = ModelCheckpoint()
 model = XORModel()
 
-trainer = pl.Trainer(max_epochs=600, callbacks=[checkpoint_callback])
+# kell a 650 korszak, mert érdekes mód 500 után, első futtatásra hibázik.
+trainer = pl.Trainer(max_epochs=650, callbacks=[checkpoint_callback])
 
 trainer.fit(model, train_dataloaders=train_loader)
 
