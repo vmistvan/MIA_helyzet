@@ -12,7 +12,8 @@ Lehet, hogy online kezded, majd aztán helyi gépen folytatod, fejlesztőeszköz
 1. A __Python__ - lesz a programnyelv, amit leginkább használhatsz AI témában.
 2. __Jupyter__ - nagyon erős eszköz, ahol szöveges jegyzeteket, python programrészeket különálló futtási lehetőséggel, és kimeneteket is megjeleníthetsz.
 3. __PyCharm vagy VS Code__ - fejleszőkörnyezet nélkül ne kezdj hozzá!
-4. És hasznos modulok általános adatkezeléshez, az adatzsonglőrködéshez, vizualizációhoz, vagy éppen amit a modelled vagy modelled típusának fejlesztői adtak.
+4. __Github__ vagy más verziókezelő rendszer, mert egyszer legalábbis a saját gépeid közt, de át akarod vinni amit készítettél.
+5. És hasznos modulok általános adatkezeléshez, az adatzsonglőrködéshez, vizualizációhoz, vagy éppen amit a modelled vagy modelled típusának fejlesztői adtak.
 
 Nézzük, hogy lehet elkészíteni a munkakörnyezetet!
 
