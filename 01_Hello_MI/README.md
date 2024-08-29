@@ -1,4 +1,7 @@
-# helló, mi?
+# Helló, MI?
+# Avagy Hello World a Mesterséges Intelligenciához
+
+
 import torch
 from torch import nn, optim
 from torch.autograd import Variable
