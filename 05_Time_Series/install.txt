@@ -1,0 +1,23 @@
+## Követelmények
+## Windows alatt a Pycharm community változatát használom. Python verzió: 3.11
+## Egy viszonylag kis modellt készít (lightning_logs alatti checkpointok) nem lehetetlen, hogy ez a példa egy szokványos laptop Nvidia kártyán is elfut
+## Telepíteni kell a cuda támogatást, és a python kiegészítéseit. Bár ehhez a tréninghez nem kell minden, én az alábbi dolgokból válogatok a python virtuális környezet felkészítéséhez:
+
+python.exe -m pip install --upgrade pip
+
+
+pip install pytorch-lightning
+pip install pandas
+pip install scikit-learn
+pip install torch
+# pip install torch==2.1.0 torchtext==0.15.2 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
+
+##  praktikusan verzió nélkül jobban lefut.
+# pip install torch==2.1.0 torchtext torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+## bocs, ha mindent lefuttattál eddig, a fentieket csak az ősök szellemének meg nem zavarása miatt raktam be,
+## innentől azt hiszem, mindent végigolvasol először, mielőtt kattintgatsz :)
+pip install 'torch[torchtext, torchvision, torchaudio]' --index-url https://download.pytorch.org/whl/cu118
+
+ pip install flash
+ pip install lightning-flash
