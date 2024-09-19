@@ -1,0 +1,16 @@
+id	main_text	label
+100001	A Bitcoin az első úgynevezett kriptovaluta.	true
+100002	A Bitcoin még idén meg fogja duplázni az árfolyamát.	unproven
+100003	A Bitcoin létrehozója a Satoshi Nakamoto álnevet használta.	true
+100004	A Satoshi Nakamoto álnév mögött valójában Mészáros Lőrinc áll.	false
+100005	A Bitcoin csak a hülyegyerekek szarsága.	vulgarity
+100006	Csak a lúzerek vesznek Bitcoint.	insult
+100007	A Bitcoin árfolyama a tőzsdeindexekkel és az arany értékével függ össze.	mixture
+100008	Az Ethereum a Bitcoin technológiájára alapoz.	mixture
+100009	A hálózatot alkotó csomópontok között nincs kiemelt szerepű, a jelenlegi megvalósítás szerint mindegyikük a teljes adatbázist tárolja, így a rendszer bármekkora számú csomópont kiesése esetén is tovább működik.	true
+100010	A pszeudoanonimitást és a központi kontroll hiányát előnyösnek találhatják az illegális üzletet folytatók is. A rendszerrel szembeni egyik leggyakoribb kritika szerint működése elősegíti a törvénytelen üzletek lebonyolítását, és emiatt az egész fizetési rendszert illegálisnak kell tekinteni.	mixture
+100011	A Bitcoin a bűnözők pénze, becsületes ember nem használja, mert nem akar kilépni a fiat valuták nyújtotta biztonságos környezetből.	false
+100012	A központi árszabályozás hiánya az árfolyamot nagyon változékonnyá teszi, a teljes monetáris bázishoz képest alacsony forgalom mellett mozgó ár pedig gyakran szélsőséges mozgásokat, hirtelen felfutásokat és drasztikus összeomlásokat eredményez.	true
+100013	Aki a Bitcoint kitalálta, Satoshi Nakamoto álnéven publikálta a szoftvert és előtte 2008. október 31-én a Bitcoin fehér könyvét.	true
+100014	Az arany stabil értékőrző, mert ismert mennyiség van belőle, óriási a piaci kapitalizációja, és nem hatnak rá a tőzsdei manipulációk.	mixture
+100015	Az amerikai pénzemberek azt állítják, a Bitcoin és más kriptodevizák nem pénzek, az értékük nagyon volatilis és a fedezetük csupán levegő.	false
