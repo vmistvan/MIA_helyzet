@@ -1,0 +1,45 @@
+## Ez egy kicsit más, mint a többi...
+# python 3.11 verziót használj! esetleg a colab után a 3.10 is jó lehet, de azon nem teszteltem!
+
+pip install pytorch_lightning
+
+pip install nltk
+
+# mert nincs olyan, hogy PIL.
+pip3 install Pillow
+
+pip install torchvision
+
+## figyelem! Bár teljesen azt hihetnénk, hogy van model és vocabulary modul magában a pythonban,
+## ezek valójában az itt meglévő fájlokbban lévő osztályok!!
+
+pip install matplotlib
+
+## Adatok letöltése!! Ez csak a Colabra jó! Ésszel, értelmezve használd!
+## Windows alatt a felkiáltójel kezdet nélkül működik a wget!
+# DE!!!!!
+# Még jobban teszed, ha inkább böngészőn keresztül töltöd le, nem itt babrálsz.
+# 18GB letöltendő adat könnyen megpusztul, és akkor nem mindegy, honnan kell folytatnod...
+
+!wget http://images.cocodataset.org/zips/train2017.zip # itt tartok.
+!wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+
+!mkdir coco_data
+# win megoldás:
+md coco_data
+
+# linux
+!unzip ./train2017.zip -d ./coco_data/
+!rm ./train2017.zip
+# win: amid van :D sztem ezt legjobb total commanderből
+
+# ez is linux, windows alatt, mint fentebb :)
+!unzip ./annotations_trainval2017.zip -d ./coco_data/
+!rm ./annotations_trainval2017.zip
+!rm ./coco_data/annotations/instances_val2017.json
+!rm ./coco_data/annotations/captions_val2017.json
+!rm ./coco_data/annotations/person_keypoints_train2017.json
+!rm ./coco_data/annotations/person_keypoints_val2017.json
+
+
+
