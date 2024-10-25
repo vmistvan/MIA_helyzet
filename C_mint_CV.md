@@ -27,7 +27,7 @@ Food_GAN – a kaja okés, de nyilván nem érti a mélyebb 3d geometriát, enge
 Semisupervised -  A legutolsó projekt, feltettem lángbetűs figyelmeztetéssel, hogy nem jó még, de hátha valaki így is hasznát leli. Meg stay tuned.
 
 ## Részvétel:
-Előadás a Siemensnél az AI-ról.
+Előadás a cégemnél az AI-ról (200 hallgatóval!).
 Folyamatos párbeszéd az online csoportomban, és emberekkel külön is, beszámoló az eredményeimről és vélemény kikérése.
 Könyv lefordítása, és más csak angol területen elérhető háttérinfók fordítása. Szerzői jogi problémák miatt ezek nem publikusak (a bennem élő hörcsög megnyugtatására alcímmel 😃 )
 
