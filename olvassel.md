@@ -11,3 +11,9 @@ Azért hoztam ezt a pontot létre, hogy a sok infót fontosság szerint össze t
 
 ## Napi üzenet!
 05_Time_Series könyvtár alá felkerült egy új modell, érdemes megnézni, kipróbálni.
+
+## Fontos!!
+Ezt máshol is írom, de olyan fontos infó, hogy érdemes redundánsan:ű
+
+# linux alatt bevállt install cuda-hoz:
+sudo apt install nvidia-driver-550
