@@ -8,6 +8,9 @@ import torchvision.transforms as transforms
 from model import HybridModel
 from vocabulary import Vocabulary
 
+import torch
+
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 def load_image(image_file_path, transform=None):
     img = Image.open(image_file_path).convert('RGB')
@@ -18,15 +21,16 @@ def load_image(image_file_path, transform=None):
     return img
 
 
-image_file_path = 'sample.png'
+image_file_path = 'sample.jpg'
 transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize((0.485, 0.456, 0.406),
                          (0.229, 0.224, 0.225))])
 img = load_image(image_file_path, transform)
 
-hybrid_model = HybridModel.load_from_checkpoint("lightning_logs/version_0/checkpoints/epoch=4-step=784.ckpt")
+hybrid_model = HybridModel.load_from_checkpoint("./kepelemzes.pt")
 token_ints = hybrid_model.get_caption(img)
+# token_ints = token_ints[0].cuda().numpy()
 token_ints = token_ints[0].cpu().numpy()
 
 with open('coco_data/vocabulary.pkl', 'rb') as f:

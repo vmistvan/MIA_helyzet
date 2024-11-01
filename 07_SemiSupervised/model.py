@@ -5,6 +5,7 @@ import torchvision.models as models
 
 import pytorch_lightning as pl
 
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 class HybridModel(pl.LightningModule):
     def __init__(self, cnn_embdng_sz, lstm_embdng_sz, lstm_hidden_lyr_sz, lstm_vocab_sz, lstm_num_lyrs, max_seq_len=20):
@@ -40,6 +41,7 @@ class HybridModel(pl.LightningModule):
         return model_outputs
 
     def forward_cnn_no_batch_norm(self, input_images):
+        input_images = input_images.to(torch.device('cuda'))
         with torch.no_grad():
             features = self.cnn_resnet(input_images)
         features = features.reshape(features.size(0), -1)
@@ -58,7 +60,9 @@ class HybridModel(pl.LightningModule):
         loss_criterion = nn.CrossEntropyLoss()
         imgs, caps, lens = batch
         outputs = self(imgs, caps, lens)
+        outputs = outputs.to(torch.device('cuda'))
         targets = pk_pdd_seq(caps, lens, batch_first=True)[0]
+        targets = targets.to(torch.device('cuda'))
         loss = loss_criterion(outputs, targets)
         self.log('train_loss', loss, on_epoch=True)
         return loss

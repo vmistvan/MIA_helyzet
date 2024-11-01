@@ -51,6 +51,9 @@ def build_vocabulary(json_path, threshold):
         vocabulary.add_token(token)
     return vocabulary
 
+#####################################################
+# Főprogram innen indul
+#####################################################
 
 obj_fl = "./coco_data/annotations/instances_train2017.json"
 with open(obj_fl) as json_file:
@@ -171,9 +174,12 @@ for file_name in filtered_image_file_names:
 # !rm -rf ./coco_data/train2017
 # windows módszer:
 # de nem biztos, hogy egyáltalán ki kéne ezt gyomlálni, ha van hely...
-shu.rmtree("./coco_data/train2017")
+# shu.rmtree("./coco_data/train2017")
 
 nltk.download('punkt')
+
+# ezt is kéri:
+nltk.download('punkt_tab')
 
 input_path = './coco_data/images/'
 output_path = './coco_data/resized_images/'
@@ -183,7 +189,7 @@ resize_images(input_path, output_path, new_size)
 # megoldás colab, linux környezetben:
 # !rm -rf ./coco_data/images
 # windows módszer:
-shu.rmtree("./coco_data/images")
+# shu.rmtree("./coco_data/images")
 
 
 # megoldás colab, linux környezetben:

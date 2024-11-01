@@ -13,7 +13,7 @@ import pytorch_lightning as pl
 from model import HybridModel
 from vocabulary import Vocabulary
 
-# na, ez mi a fene???
+# na, ez mi a fene??? már megvan, csak az nem világos, miért kell újra letölteni.
 nltk.download('punkt')
 
 
@@ -41,7 +41,10 @@ class CocoDataset(data.Dataset):
         image_file = self.image_id_file_name[image_id]
         image_path = os.path.join(self.image_dir, image_file)
         image = Image.open(image_path).convert('RGB')
-        if self.transform is not None:
+        if (self.transform is not None) and image.width >= 224 and image.height >= 224:
+            image = self.transform(image)
+        elif image.width < 224 or image.height < 224:
+            image = image.resize([224,224])
             image = self.transform(image)
 
         return image, torch.Tensor(caption)
@@ -70,10 +73,10 @@ def get_loader(data_path, json_path, vocabulary, transform, batch_size, shuffle,
                           vocabulary=vocabulary,
                           transform=transform)
     coco_dl = data.DataLoader(dataset=coco_ds,
-                            batch_size=batch_size,
-                            shuffle=shuffle,
-                            num_workers=num_workers,
-                            collate_fn=coco_collate_fn)
+                              batch_size=batch_size,
+                              shuffle=shuffle,
+                              num_workers=num_workers,
+                              collate_fn=coco_collate_fn)
     return coco_dl
 
 
@@ -83,6 +86,8 @@ transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize((0.485, 0.456, 0.406),
                           (0.229, 0.224, 0.225))])
+
+
 
 with open('coco_data/vocabulary.pkl', 'rb') as f:
     vocabulary = pickle.load(f)
@@ -97,5 +102,7 @@ coco_data_loader = get_loader('coco_data/images',
 
 hybrid_model = HybridModel(256, 256, 512,
                            len(vocabulary), 1)
-trainer = pl.Trainer(max_epochs=5)
+trainer = pl.Trainer(max_epochs=50)
 trainer.fit(hybrid_model, coco_data_loader)
+
+trainer.save_checkpoint("./kepelemzes.pt")

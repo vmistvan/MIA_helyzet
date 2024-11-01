@@ -41,5 +41,13 @@ md coco_data
 !rm ./coco_data/annotations/person_keypoints_train2017.json
 !rm ./coco_data/annotations/person_keypoints_val2017.json
 
+# praktikusan újbóli előkészítésnél
+# annotations és train2017 könyvtárak maradnak csak meg
+
+
+
+# ezt is felraktam azért közben, szerintem kell.
+pip install torch==2.1.0 torchtext torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
 
 
