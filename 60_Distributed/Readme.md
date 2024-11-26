@@ -1,4 +1,4 @@
-# distributed-pytorch
+# distributed-pytorch - nem működik még, kipróbáláshoz ez ígéretes!
 Kód a DDP tutorial sorozathoz https://pytorch.org/tutorials/beginner/ddp_series_intro.html
 
 Minden kód fájl bővíti az előzőt. 
