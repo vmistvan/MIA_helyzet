@@ -17,3 +17,6 @@ multinode.py: DDP több csomóponton Torchrun (vagy Slurm) használatával
 slurm/setup_pcluster_slurm.md: instructions to set up an AWS cluster
 slurm/config.yaml.template: configuration to set up an AWS cluster
 slurm/sbatch_run.sh: slurm script to launch the training job
+
+
+torch>=1.11.0
